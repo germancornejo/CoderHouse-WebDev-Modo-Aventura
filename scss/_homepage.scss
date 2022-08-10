@@ -1,0 +1,138 @@
+/* 1 --- HOME PAGE */
+
+.navbar {
+    background-color: rgba(181, 181, 181, 0.632);
+    position: fixed;
+    width: 100vw;
+    z-index: 99999;
+    color: white;
+}
+
+.nav-link {
+    color: $color-azul-aventura;
+}
+
+
+
+/* AVENTURAS: Qué te ofrecemos */
+
+.aventuras {
+    width: 100%;
+
+    h2 {
+        background-color: $color-azul-aventura;
+        text-align: center;
+        padding: 8px;
+    }
+}
+
+.card {
+    width: 18rem;
+    background-color: rgb(176, 228, 238);
+    margin: 15px;
+
+}
+
+.aventuras--BotonVerMas {
+    margin: 10rem 3rem;
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(86, 213, 252);
+    text-align: center;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+}
+
+.galeria {
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        background-color: black;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.galeria-fotos {
+    padding: 2vw;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 150px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+        box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    }
+}
+
+.imagen-1 {
+    object-fit: cover;
+    grid-row-end: span 2;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+}
+
+
+footer {
+    p {
+        text-align: center;
+        color: white;
+        background-color: $color-azul-aventura;
+        line-height: 2rems;
+        width: 100%;
+    }
+}
+
+/* Botón de Whatsapp */
+
+.whatsapp {
+    z-index: 999;
+    width: 100%;
+
+    div {
+
+        a {
+            position: fixed;
+            height: 4rem;
+            width: 4rem;
+            right: 1rem;
+            bottom: 1.8rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+                -webkit-box-shadow: 14px 12px 16px 2px #000000;
+                box-shadow: 14px 12px 16px 2px #000000;
+            }
+        }
+    }
+    
+    p {
+    object-fit: contain;
+    color: chartreuse;
+    }
+}

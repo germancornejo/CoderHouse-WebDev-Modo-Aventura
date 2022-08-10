@@ -1,0 +1,20 @@
+/* Tablet */
+@media (min-width: 768px) {  
+    .col-md:hover {
+        transform: skew(3deg);
+    }
+}
+    
+    
+/* Desktop */
+    @media (min-width: 1200px) {
+        .col-lg:hover {
+            transform: skew(3deg);
+    }
+    
+        .nosale {
+            display: contents;
+        }
+    }
+
+

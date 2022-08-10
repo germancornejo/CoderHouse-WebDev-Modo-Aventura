@@ -1,0 +1,94 @@
+/* 0 --- RESETEO DE CSS */
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    font-family: poppins;
+    font-size: 18px;
+    color:black;
+}
+
+/* --- corrección de scroll horizontal heredado de Bootstrap */
+.col-sm {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* ----- >>> efecto subrayado para todos loslinks < */
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+
+
+/* Tipografías e íconos */
+
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: $color-azul-aventura;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: $color-rojo-aventura;
+}
+
+h4 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: $color-rojo-aventura;
+}
+
+h5 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.marca {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: $color-azul-aventura;
+}

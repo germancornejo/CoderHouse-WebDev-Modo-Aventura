@@ -1,0 +1,19 @@
+{
+  "name": "sass2-y-seo",
+  "version": "1.0.0",
+  "description": "Seguimos avanzando en el curso de WebDev de Coder House",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germancornejo/sass2-y-seo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/germancornejo/sass2-y-seo/issues"
+  },
+  "homepage": "https://github.com/germancornejo/sass2-y-seo#readme"
+}

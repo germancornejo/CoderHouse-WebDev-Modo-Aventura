@@ -1,0 +1,61 @@
+/* 2 --- AVENTURAS */
+
+.pagina-Aventuras  {
+    width: 100%;
+    min-height: 450px;
+    background: url(../media/surfing-friends.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    background-attachment: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.pagina-Aventuras {
+    h2 {
+    background-color: rgb(44, 2, 229);
+    text-align: center;
+    padding: 8px;
+    }
+
+    p {
+    color: rgb(255, 255, 255);
+    align-self: center;
+    text-align: center;
+    }
+}
+
+.card-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 22px;
+    color: black;
+}
+
+.card-link {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+
+    a {
+    color: rgb(211, 0, 0);
+    }
+}
+
+.card-body {
+    margin: 10px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+
+    a {
+        color: $color-rojo-aventura;
+    }
+}
+

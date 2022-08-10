@@ -1,0 +1,49 @@
+/* 3 --- NOSOTROS */
+
+.pagina-Nosotros {
+    width: 100%;
+    min-height: 450px;
+    background: url(../media/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    background-attachment: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    h2 {
+        background-color: $color-azul-aventura;
+        text-align: center;
+        padding: 8px;
+    }
+
+    p {
+        color: $color-azul-aventura;
+        text-align: center;
+    }
+  }
+
+
+.nosotrosTexto {
+    padding: 15px;
+    margin: 15px;
+}
+
+.nosotros__argumentos--item {
+    
+    p {
+    font-weight: 700;
+    }
+}
+
+.nosotros__argumentos--icono {
+    font-size: 5rem;
+}
+
+.epigrafe {
+    font-weight: 300;
+    font-size: 1rem;
+}
