@@ -63,8 +63,7 @@ h3 {
 
 h4 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 2rem;
-  color: #ce0707; }
+  font-size: 2rem; }
 
 h5 {
   font-family: 'Permanent Marker', cursive;
@@ -310,12 +309,40 @@ footer p {
 .nosotros__argumentos--item p {
   font-weight: 700; }
 
-.nosotros__argumentos--icono {
-  font-size: 5rem; }
-
 .epigrafe {
   font-weight: 300;
   font-size: 1rem; }
+
+/* mapas */
+.icono-puntual {
+  font-size: 5rem;
+  padding: 0rem 3rem;
+  color: #ce0707; }
+
+.icono-lider {
+  font-size: 5rem;
+  padding: 0rem 3rem;
+  color: #058a00; }
+
+.icono-experto {
+  font-size: 5rem;
+  padding: 0rem 3rem;
+  color: #2c02e5; }
+
+.titulo-puntual {
+  color: #ce0707;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem; }
+
+.titulo-lider {
+  color: #058a00;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem; }
+
+.titulo-experto {
+  color: #2c02e5;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem; }
 
 /* 4 --- COMUNIDAD */
 .pagina-Comunidad {

@@ -39,11 +39,40 @@
     }
 }
 
-.nosotros__argumentos--icono {
-    font-size: 5rem;
-}
 
 .epigrafe {
     font-weight: 300;
     font-size: 1rem;
+}
+
+
+/* mapas */
+
+$iconos: (
+    puntual: $color-rojo-aventura,
+    lider: $color-verde-aventura,
+    experto: $color-azul-aventura
+);
+
+@each $cualidad, $valoracion in $iconos {
+    .icono-#{$cualidad} {
+        font-size: 5rem;
+        padding: 0rem 3rem;
+        color:$valoracion; 
+}
+}
+
+
+$titulos: (
+    puntual: $color-rojo-aventura,
+    lider: $color-verde-aventura,
+    experto: $color-azul-aventura
+);
+
+@each $cualidad, $valoracion in $iconos {
+    .titulo-#{$cualidad} {
+        color:$valoracion;
+        font-family: $tipografia-ppal;
+        font-size: 2rem;
+}
 }
