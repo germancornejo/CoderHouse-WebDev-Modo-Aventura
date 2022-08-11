@@ -9,10 +9,7 @@
     background-size: cover;
     margin-top: 0px;
     background-attachment: sticky;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex-column-end-center;
 
     h2 {
         background-color: $color-azul-aventura;

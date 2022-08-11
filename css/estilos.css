@@ -75,6 +75,7 @@ h5 {
   font-size: 20px;
   color: #2c02e5; }
 
+/* mixins */
 /* Tablet */
 @media (min-width: 768px) {
   .col-md:hover {
