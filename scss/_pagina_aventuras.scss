@@ -56,50 +56,24 @@
 }
 
 
-/* mapas */
+/*EXTEND*/
 
-$compania: (
-grupo: $color-rojo-aventura,
-pareja: $color-rojo-aventura,
-solo: $color-rojo-aventura
-);
-
-@each $cantidad, $color in $compania {
-.compania-#{$cantidad}{
-    background-color: $color;
+.tiempo {
+    background-color: $color-verde-aventura;
 }
-} 
 
-$costo: (
-premium: $color-azul-aventura,
-economico:$color-azul-aventura,
-gratis: $color-azul-aventura,
-);
-
-@each $cantidad, $color in $costo {
-.costo-#{$cantidad}{
-    background-color: $color;
-}
-} 
-
-$tiempo: (
-vacaciones: $color-verde-aventura,
-finde:  $color-verde-aventura,
-eneldia: $color-verde-aventura,
-);
-
-@each $cantidad, $color in $tiempo {
-.tiempo-#{$cantidad}{
-    background-color: $color;
-}
-} 
-
-/* each */
-
-$lista-colores: red, green, blue;
-@each $color in $lista-colores {
-    .color-#{$color} {
-        background-color: $color;
+.tiempo-mucho {
+    @extend .tiempo;
+        opacity: 1;
     }
-    
-}
+
+.tiempo-algo {
+        @extend .tiempo;
+            opacity: 0.5;
+        }
+
+
+.tiempo-poco {
+        @extend .tiempo;
+        opacity: 0.1;
+}        
