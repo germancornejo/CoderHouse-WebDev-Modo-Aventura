@@ -109,7 +109,7 @@ h5 {
 
 .card {
   width: 18rem;
-  background-color: #d5ff79;
+  background-color: white;
   margin: 15px; }
 
 .aventuras--BotonVerMas {
@@ -228,7 +228,7 @@ footer p {
 
 .card-body {
   margin: 10px;
-  background-color: #d5ff79; }
+  background-color: white; }
 
 .card-link {
   text-decoration: none;
@@ -236,33 +236,50 @@ footer p {
   font-size: 28px; }
 
 /*EXTEND*/
-.tiempo, .tiempo-mucho, .tiempo-algo, .tiempo-poco {
+.tiempo, .tiempo-mucho, .tiempo-algo, .tiempo-poco, .costo-mucho, .costo-algo, .costo-poco {
   background-color: #058a00; }
 
 .tiempo-mucho {
   opacity: 1;
-  color: lightskyblue; }
+  color: white; }
 
 .tiempo-algo {
-  opacity: 0.8;
-  color: darkblue; }
+  opacity: 0.7;
+  color: white; }
 
 .tiempo-poco {
   opacity: 0.5;
-  color: darkblue; }
+  color: white; }
 
 .color-costo {
   background-color: #2c02e5; }
 
-/* mapas */
 .costo-mucho {
-  background-color: gray; }
+  opacity: 1;
+  color: white; }
 
 .costo-algo {
-  background-color: gray; }
+  opacity: 0.7;
+  color: white; }
 
 .costo-poco {
-  background-color: gray; }
+  opacity: 0.5;
+  color: white; }
+
+.compania, .compania-mucho, .compania-algo, .compania-poco {
+  background-color: #ce0707; }
+
+.compania-mucho {
+  opacity: 1;
+  color: white; }
+
+.compania-algo {
+  opacity: 0.7;
+  color: white; }
+
+.compania-poco {
+  opacity: 0.5;
+  color: white; }
 
 /* 3 --- NOSOTROS */
 .pagina-Nosotros {
