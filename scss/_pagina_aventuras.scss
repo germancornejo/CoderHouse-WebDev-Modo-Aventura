@@ -1,6 +1,6 @@
 /* 2 --- AVENTURAS */
 
-.pagina-Aventuras  {
+.pagina-Aventuras {
     width: 100%;
     min-height: 450px;
     background: url(../media/surfing-friends.jpg);
@@ -18,14 +18,14 @@
         background-color: rgb(44, 2, 229);
         text-align: center;
         padding: 8px;
-        }
+    }
 
-        p {
-            color: rgb(255, 255, 255);
-            align-self: center;
-            text-align: center;
-            }
-  }
+    p {
+        color: rgb(255, 255, 255);
+        align-self: center;
+        text-align: center;
+    }
+}
 
 
 .card-title {
@@ -64,35 +64,38 @@
 
 .tiempo-mucho {
     @extend .tiempo;
-        opacity: 1;
-    }
+    opacity: 1;
+    color:lightskyblue;
+}
 
 .tiempo-algo {
-        @extend .tiempo;
-            opacity: 0.5;
-        }
+    @extend .tiempo;
+    opacity: 0.8;
+    color: darkblue;
+}
 
 
 .tiempo-poco {
-        @extend .tiempo;
-        opacity: 0.1;
-}        
+    @extend .tiempo;
+    opacity: 0.5;
+    color: darkblue;
+}
 
-.costo {
+.color-costo {
     background-color: $color-azul-aventura;
 }
 
 
-/* mapa */
+/* mapas */
 
 $dinero: (
-    uno:$uno,
-    dos:$dos,
-    tres:$tres
+    mucho: opacify($color: grey, $amount: 1),
+    algo:  opacify($color: grey, $amount: 0.8),
+    poco:  opacify($color: grey, $amount: 0.5)
 );
 
 @each $monto, $valor in $dinero {
     .costo-#{$monto} {
-        opacity: $valor;
+        background-color: $valor;
     }
 }
