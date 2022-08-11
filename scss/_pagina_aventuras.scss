@@ -77,3 +77,22 @@
         @extend .tiempo;
         opacity: 0.1;
 }        
+
+.costo {
+    background-color: $color-azul-aventura;
+}
+
+
+/* mapa */
+
+$dinero: (
+    uno:$uno,
+    dos:$dos,
+    tres:$tres
+);
+
+@each $monto, $valor in $dinero {
+    .costo-#{$monto} {
+        opacity: $valor;
+    }
+}
