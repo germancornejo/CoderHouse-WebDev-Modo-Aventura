@@ -59,12 +59,12 @@ h2 {
 h3 {
   font-family: 'Permanent Marker', cursive;
   font-size: 3rem;
-  color: #9a0202; }
+  color: #ce0707; }
 
 h4 {
   font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
-  color: #9a0202; }
+  color: #ce0707; }
 
 h5 {
   font-family: 'Permanent Marker', cursive;
@@ -109,7 +109,7 @@ h5 {
 
 .card {
   width: 18rem;
-  background-color: #b0e4ee;
+  background-color: #d5ff79;
   margin: 15px; }
 
 .aventuras--BotonVerMas {
@@ -205,16 +205,14 @@ footer p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center; }
-
-.pagina-Aventuras h2 {
-  background-color: #2c02e5;
-  text-align: center;
-  padding: 8px; }
-
-.pagina-Aventuras p {
-  color: white;
-  align-self: center;
-  text-align: center; }
+  .pagina-Aventuras h2 {
+    background-color: #2c02e5;
+    text-align: center;
+    padding: 8px; }
+  .pagina-Aventuras p {
+    color: white;
+    align-self: center;
+    text-align: center; }
 
 .card-title {
   font-family: 'Permanent Marker', cursive;
@@ -224,19 +222,56 @@ footer p {
 .card-link {
   text-decoration: none;
   font-family: 'Permanent Marker', cursive;
-  font-size: 18px; }
+  font-size: 22px; }
   .card-link a {
-    color: #d30000; }
+    color: #ce0707; }
 
 .card-body {
-  margin: 10px; }
+  margin: 10px;
+  background-color: #d5ff79; }
 
 .card-link {
   text-decoration: none;
   font-family: 'Permanent Marker', cursive;
-  font-size: 18px; }
-  .card-link a {
-    color: #9a0202; }
+  font-size: 28px; }
+
+/* mapas */
+.compania-grupo {
+  background-color: #ce0707; }
+
+.compania-pareja {
+  background-color: #ce0707; }
+
+.compania-solo {
+  background-color: #ce0707; }
+
+.costo-premium {
+  background-color: #2c02e5; }
+
+.costo-economico {
+  background-color: #2c02e5; }
+
+.costo-gratis {
+  background-color: #2c02e5; }
+
+.tiempo-vacaciones {
+  background-color: #058a00; }
+
+.tiempo-finde {
+  background-color: #058a00; }
+
+.tiempo-eneldia {
+  background-color: #058a00; }
+
+/* each */
+.color-red {
+  background-color: red; }
+
+.color-green {
+  background-color: green; }
+
+.color-blue {
+  background-color: blue; }
 
 /* 3 --- NOSOTROS */
 .pagina-Nosotros {

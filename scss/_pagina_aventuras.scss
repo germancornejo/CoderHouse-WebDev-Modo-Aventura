@@ -13,21 +13,20 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    h2 {
+        background-color: rgb(44, 2, 229);
+        text-align: center;
+        padding: 8px;
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            align-self: center;
+            text-align: center;
+            }
   }
 
-.pagina-Aventuras {
-    h2 {
-    background-color: rgb(44, 2, 229);
-    text-align: center;
-    padding: 8px;
-    }
-
-    p {
-    color: rgb(255, 255, 255);
-    align-self: center;
-    text-align: center;
-    }
-}
 
 .card-title {
     font-family: 'Permanent Marker', cursive;
@@ -38,24 +37,69 @@
 .card-link {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
-    font-size: 18px;
-
-    a {
-    color: rgb(211, 0, 0);
-    }
-}
-
-.card-body {
-    margin: 10px;
-}
-
-.card-link {
-    text-decoration: none;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 18px;
+    font-size: 22px;
 
     a {
         color: $color-rojo-aventura;
     }
 }
 
+.card-body {
+    margin: 10px;
+    background-color: rgb(213, 255, 121);
+}
+
+.card-link {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+}
+
+
+/* mapas */
+
+$compania: (
+grupo: $color-rojo-aventura,
+pareja: $color-rojo-aventura,
+solo: $color-rojo-aventura
+);
+
+@each $cantidad, $color in $compania {
+.compania-#{$cantidad}{
+    background-color: $color;
+}
+} 
+
+$costo: (
+premium: $color-azul-aventura,
+economico:$color-azul-aventura,
+gratis: $color-azul-aventura,
+);
+
+@each $cantidad, $color in $costo {
+.costo-#{$cantidad}{
+    background-color: $color;
+}
+} 
+
+$tiempo: (
+vacaciones: $color-verde-aventura,
+finde:  $color-verde-aventura,
+eneldia: $color-verde-aventura,
+);
+
+@each $cantidad, $color in $tiempo {
+.tiempo-#{$cantidad}{
+    background-color: $color;
+}
+} 
+
+/* each */
+
+$lista-colores: red, green, blue;
+@each $color in $lista-colores {
+    .color-#{$color} {
+        background-color: $color;
+    }
+    
+}
