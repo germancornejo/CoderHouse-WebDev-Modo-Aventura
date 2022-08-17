@@ -30,9 +30,21 @@
     width: 18rem;
     background-color: white;
     margin: 15px;
-
 }
 
+// Botón de Bootstrap modificado que irá a desafíos particulares cuando sean muchos//
+.btn {
+    --bs-btn-bg: rgb(5, 138, 0);
+    --bs-btn-border-radius: 3rem;
+    color: $color-verde-aventura-hover;
+}
+
+.btn-primary {
+    --bs-btn-hover-bg: $color-verde-aventura-hover;
+    --bs-btn-hover-color: $color-azul-aventura;
+}
+
+// Botón para ir a la página de Aventuras
 .aventuras--BotonVerMas {
     margin: 10rem 3rem;
     width: 30%;
@@ -52,6 +64,7 @@
     }
 }
 
+// Sección de Comunidad Aventurera (Galería)
 .galeria {
     padding: 30px 0;
     width: 100%;
@@ -96,7 +109,7 @@
     box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
 }
 
-
+// Pie de página
 footer {
     p {
         text-align: center;
@@ -125,8 +138,6 @@ footer {
             img {
                 height: 100%;
                 width: 100%;
-                -webkit-box-shadow: 14px 12px 16px 2px #000000;
-                box-shadow: 14px 12px 16px 2px #000000;
             }
         }
     }

@@ -112,6 +112,15 @@ h5 {
   background-color: white;
   margin: 15px; }
 
+.btn {
+  --bs-btn-bg: rgb(5, 138, 0);
+  --bs-btn-border-radius: 3rem;
+  color: #6cbb69; }
+
+.btn-primary {
+  --bs-btn-hover-bg: $color-verde-aventura-hover;
+  --bs-btn-hover-color: $color-azul-aventura; }
+
 .aventuras--BotonVerMas {
   margin: 10rem 3rem;
   width: 30%;
@@ -184,9 +193,7 @@ footer p {
     bottom: 1.8rem; }
     .whatsapp div a img {
       height: 100%;
-      width: 100%;
-      -webkit-box-shadow: 14px 12px 16px 2px #000000;
-      box-shadow: 14px 12px 16px 2px #000000; }
+      width: 100%; }
   .whatsapp p {
     object-fit: contain;
     color: chartreuse; }
@@ -222,18 +229,14 @@ footer p {
 .card-link {
   text-decoration: none;
   font-family: 'Permanent Marker', cursive;
-  font-size: 22px; }
-  .card-link a {
-    color: #ce0707; }
+  font-size: 18px; }
+
+.card-link a {
+  color: #d30000; }
 
 .card-body {
   margin: 10px;
   background-color: white; }
-
-.card-link {
-  text-decoration: none;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 28px; }
 
 /*EXTEND*/
 .tiempo, .tiempo-mucho, .tiempo-algo, .tiempo-poco, .costo-mucho, .costo-algo, .costo-poco {

@@ -34,26 +34,22 @@
 .card-link {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
-    font-size: 22px;
-
-    a {
-        color: $color-rojo-aventura;
-    }
+    font-size: 18px;
 }
+
+.card-link a {
+    color: rgb(211, 0, 0);
+}
+
 
 .card-body {
     margin: 10px;
     background-color: white;
 }
 
-.card-link {
-    text-decoration: none;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 28px;
-}
-
 
 /*EXTEND*/
+// Escala cromática que indica cantidades
 
 .tiempo {
     background-color: $color-verde-aventura;
@@ -62,7 +58,7 @@
 .tiempo-mucho {
     @extend .tiempo;
     opacity: 1;
-    color:white;
+    color: white;
 }
 
 .tiempo-algo {
@@ -85,13 +81,13 @@
 .costo-mucho {
     @extend .tiempo;
     opacity: 1;
-    color:white;
+    color: white;
 }
 
 .costo-algo {
     @extend .tiempo;
     opacity: 0.7;
-    color:white;
+    color: white;
 }
 
 
@@ -108,13 +104,13 @@
 .compania-mucho {
     @extend .compania;
     opacity: 1;
-    color:white;
+    color: white;
 }
 
 .compania-algo {
     @extend .compania;
     opacity: 0.7;
-    color:white;
+    color: white;
 }
 
 
@@ -123,3 +119,4 @@
     opacity: 0.5;
     color: white;
 }
+

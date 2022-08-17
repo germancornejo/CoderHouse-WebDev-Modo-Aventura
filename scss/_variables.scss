@@ -3,12 +3,19 @@
 $blanco: rgb(255, 255, 255);
 $negro: rgb(0, 0, 0);
 $tipografia-ppal: 'Permanent Marker', cursive;
+
+// Colores de la marca MODO: AVENTURA
 $color-azul-aventura: rgba(44, 2, 229,1);
+$color-azul-aventura-hover: rgb(113, 86, 233);
 $color-fondo-boton: rgb(86, 213, 252);
 $color-rojo-aventura: rgb(206, 7, 7);
+$color-rojo-aventura-hover: rgb(219, 107, 107);
 $color-verde-aventura: rgb(5, 138, 0);
+$color-verde-aventura-hover: rgb(108, 187, 105);
 $sombreado-de-fotos: 14px 12px 16px 2px #000000;
 $sombreado-de-caja: 14px 12px 16px 2px #000000;
+
+// Efectos utilizados en aventuras.html
 $mucho: opacity(1);
 $algo: opacity(0.8);
 $poco: opacity(0.5);
