@@ -76,18 +76,6 @@ h5 {
   color: #2c02e5; }
 
 /* mixins */
-/* Tablet */
-@media (min-width: 768px) {
-  .col-md:hover {
-    transform: skew(3deg); } }
-
-/* Desktop */
-@media (min-width: 1200px) {
-  .col-lg:hover {
-    transform: skew(3deg); }
-  .nosale {
-    display: contents; } }
-
 /* 1 --- HOME PAGE */
 .navbar {
   background-color: rgba(181, 181, 181, 0.632);
@@ -98,6 +86,9 @@ h5 {
 
 .nav-link {
   color: #2c02e5; }
+
+.button {
+  margin-bottom: 5rem; }
 
 /* AVENTURAS: Qué te ofrecemos */
 .aventuras {
@@ -187,9 +178,9 @@ footer p {
   width: 100%; }
   .whatsapp div a {
     position: fixed;
-    height: 4rem;
-    width: 4rem;
-    right: 1rem;
+    height: 5rem;
+    width: 5rem;
+    right: 1.8rem;
     bottom: 1.8rem; }
     .whatsapp div a img {
       height: 100%;
@@ -416,3 +407,50 @@ footer p {
     text-align: center;
     height: 3.5rem;
     position: relative; }
+
+/* Galaxy Fold */
+@media (max-width: 319px) {
+  .h3 {
+    font-size: 1rem; }
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+  .card {
+    width: 18rem; }
+  .carousel-caption {
+    display: none; }
+  .carousel-indicators {
+    display: none; }
+  .carousel-control-prev {
+    display: none; } }
+
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 767px) {
+  .h3 {
+    font-size: 1rem; }
+  .carousel-caption {
+    bottom: 0px; }
+  .carousel-indicators {
+    bottom: 0px; } }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .col-md:hover {
+    transform: skew(3deg); }
+  .card {
+    width: 18rem; }
+  .carousel-indicators {
+    bottom: 0rem; } }
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .col-lg:hover {
+    transform: skew(3deg); }
+  .nosale {
+    display: contents; }
+  .carousel-caption {
+    bottom: 5rem;
+    left: 15%;
+    padding-bottom: 2rem; } }

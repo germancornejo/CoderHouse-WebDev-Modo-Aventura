@@ -87,14 +87,18 @@
                 </div>
                 <div class="carousel-inner">
 
-                <!-- FOTO 1: Chica que surfea -->
-                    <div class="carousel-item active">
-                        <img src="media/Carousel_mobile/carousel-mobile-surfista.jpg" class="d-xs-block d-md-none w-100"
-                            alt="mujer joven en el mar con tabla de surf">
-                        <img src="media/Carousel_tablet/carousel-tablet-surfista.jpg"
-                            class="d-none d-md-block d-lg-none w-100" alt="mujer joven en el mar con tabla de surf">
-                        <img src="media/Carousel_desktop/carousel-desktop-surfista.jpg" class="d-none d-lg-block w-100"
-                            alt="mujer joven en el mar con tabla de surf">
+                <!-- IMAGEN 1: Video de amigos corriendo -->
+                <div class="carousel-item active">
+                <video id="video" loop="" autoplay="" preload="" muted="" alt="grupo de jovenes ingresando al mar con tablas de surf" class="d-xs-block d-md-none w-100">
+                    <source src="media/amigos-md.mp4" type="video/mp4"> 
+                </video>
+                <video id="video" loop="" autoplay="" preload="" muted="" alt="grupo de jovenes ingresando al mar con tablas de surf" class="d-none d-md-block d-lg-none w-100">
+                    <source src="media/amigos-md.mp4" type="video/mp4"> 
+                </video>
+                                
+                <video id="video" loop="" autoplay="" preload="" muted="" alt="grupo de jovenes ingresando al mar con tablas de surf" class="d-none d-lg-block w-100">    
+                    <source src="media/amigos-lg.mp4" type="video/mp4"> 
+                </video>
                         <div class="carousel-caption d-md-none">
                             <h3>Animate</h3>
                         </div>
@@ -109,7 +113,7 @@
                         <img src="media/Carousel_mobile/carousel-mobile-escuelita.jpg"
                             class="d-xs-block d-md-none w-100" alt="niños aprendiendo surf en la playa">
                         <img src="media/Carousel_tablet/carousel-tablet-escuelita.jpg"
-                            class="d-none d-md-block d-lg-none w-100" alt="niños aprendiendo surf en la playa">
+                        class="d-xs-none d-md-block w-100" alt="niños aprendiendo surf en la playa">
                         <img src="media/Carousel_desktop/carousel-desktop-escuelita.jpg" class="d-none d-lg-block w-100"
                             alt="niños aprendiendo surf en la playa">
                         <div class="carousel-caption d-md-none">
@@ -153,7 +157,27 @@
             </div>
         </section>
 
+<!-- Prueba de sonido -->
+<section>
+    <h2 class="sonido">
+            <a href="#">Prueba de sonido</a>
+            <audio id="beep" preload="auto">
+                <source src="media/beep.wav">
+            </audio>
+        </nav>
+    </h2>
 
+    <script>
+        var beepOne= $("#beep")[0];
+        $(".sonido")
+        .mouseenter(function() {
+            beepone.play();
+        });
+
+    </script>
+
+    
+</section>
 
         <!-- PRIMERA SECCIÓN: Oferta de Aventuras -->
         <section class="aventuras">
@@ -164,20 +188,20 @@
                 <div class="row justify-content-center">
 
                 <!-- Tarjeta 1 -->
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="center card">
                             <img src="media/excursiones-home.jpg" class="card-img-top" alt="visita faro Querandí">
                             <div class="card-body">
                                 <h5 class="card-title">Excursiones</h5>
                                 <p class="card-text">Aunque tengas mucho o poco tiempo, siempre hay algo para conocer y
                                     disfrutar.</p>
-                                <a href="pages/aventuras.html" class="btn btn-primary">Ver más</a>
+                                <a href="pages/aventuras.html" class="btn sonido btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
 
                 <!-- Tarjeta 2 -->
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="card center justify-content-center">
                             <img src="media/campamentos-home.jpg" class="card-img-top" alt="campamento familiar">
                             <div class="card-body">
@@ -190,7 +214,7 @@
                     </div>
 
                 <!-- Tarjeta 3 -->
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="d-md-none d-lg-block">
                             <div class="card center justify-content-center">
                                 <img src="media/surf_trip-home.jpg" class="card-img-top"
@@ -252,10 +276,11 @@
         <p>Todos los derechos reservados © </p>
     </footer>
 
-<!-- Script de Bootstrap y JavaScript -->
+<!-- Scripts de Bootstrap y JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </body>
 
 </html>

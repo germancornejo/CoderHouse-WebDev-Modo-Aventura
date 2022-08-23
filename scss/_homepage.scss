@@ -1,3 +1,5 @@
+
+
 /* 1 --- HOME PAGE */
 
 .navbar {
@@ -10,6 +12,10 @@
 
 .nav-link {
     color: $color-azul-aventura;
+}
+
+.button {
+    margin-bottom: 5rem
 }
 
 
@@ -130,9 +136,9 @@ footer {
 
         a {
             position: fixed;
-            height: 4rem;
-            width: 4rem;
-            right: 1rem;
+            height: 5rem;
+            width: 5rem;
+            right: 1.8rem;
             bottom: 1.8rem;
 
             img {
