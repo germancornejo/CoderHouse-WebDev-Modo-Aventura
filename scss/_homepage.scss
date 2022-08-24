@@ -18,6 +18,33 @@
     margin-bottom: 5rem
 }
 
+.carousel-caption {
+    margin-bottom: 10rem;
+}
+
+.carousel-indicators {
+    bottom:8rem;
+}
+
+
+/* REDES SOCIALES */
+
+.social {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+
+    div {
+
+
+    a {
+        text-decoration: none;
+       i {color:white;
+       }
+    }
+}
+}
 
 
 /* AVENTURAS: Qué te ofrecemos */
