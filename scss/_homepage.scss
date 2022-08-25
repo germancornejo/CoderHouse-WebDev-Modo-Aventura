@@ -19,11 +19,11 @@
 }
 
 .carousel-caption {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .carousel-indicators {
-    bottom:8rem;
+    bottom:5rem;
 }
 
 
@@ -35,7 +35,8 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: $color-verde-aventura-hover;
-    height: 4rem;
+    height: 3rem;
+    transition: 5s ease;
 
     div {
 
@@ -47,7 +48,9 @@
     }
 }
 
-
+.social div a:hover {
+    color: $color-azul-aventura
+}
 
 /* AVENTURAS: Qué te ofrecemos */
 

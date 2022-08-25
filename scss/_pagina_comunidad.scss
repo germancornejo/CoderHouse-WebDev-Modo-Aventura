@@ -23,3 +23,77 @@
     }
 
 }
+
+// Con CSS Grids
+
+.galeria-fotos-comunidad {
+    width: 100vw;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    position: absolute;
+
+    div {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+            box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+        }
+
+        p {
+            position: relative;
+            bottom: 3rem;
+            left: 2rem;
+            font-family: $tipografia-ppal;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.623);
+            width: 90%;
+            transition: ease-in-out 3s;
+        }
+    }
+}
+
+.imagen-1-comunidad {
+    object-fit: cover;
+    grid-row-end: span 2;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+
+    p {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+.galeria--BotonVerMas a {
+    margin: 4rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(86, 213, 252);
+    text-decoration: none;
+    width: 15rem;
+    text-align: center;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+}
+
+
+.galeria-fotos-comunidad img:hover {
+    -webkit-box-shadow: none;
+    box-shadow: $sombreado-de-caja;
+
+}
+
+.galeria-fotos-comunidad p:hover {
+    display: block;
+
+
+}

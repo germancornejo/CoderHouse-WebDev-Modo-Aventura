@@ -42,19 +42,33 @@ body{
 }
 
 
-/* ----- >>> efecto subrayado para todos loslinks < */
-a {
+/* ----- >>> efectos subrayado y agrandado para todos los links < */
+.subraya {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size .3s;
+    transition: background-size .7s;
 }
 
-a:hover, a:focus {
+.subraya:hover, .subraya:focus {
     background-size: 100% 2px;
 }
+
+.agranda {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: ease-in-out .3s;
+}
+
+.agranda:hover {
+    font-size: 150%;
+}
+
 
 
 /* Tipografías e íconos */

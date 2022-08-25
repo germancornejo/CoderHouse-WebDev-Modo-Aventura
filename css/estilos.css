@@ -33,17 +33,28 @@ body {
   margin-right: 0;
   margin-left: 0; }
 
-/* ----- >>> efecto subrayado para todos loslinks < */
-a {
+/* ----- >>> efectos subrayado y agrandado para todos los links < */
+.subraya {
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .3s; }
+  transition: background-size .7s; }
 
-a:hover, a:focus {
+.subraya:hover, .subraya:focus {
   background-size: 100% 2px; }
+
+.agranda {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: ease-in-out .3s; }
+
+.agranda:hover {
+  font-size: 150%; }
 
 /* Tipografías e íconos */
 h1 {
@@ -91,10 +102,10 @@ h5 {
   margin-bottom: 5rem; }
 
 .carousel-caption {
-  margin-bottom: 10rem; }
+  margin-bottom: 5rem; }
 
 .carousel-indicators {
-  bottom: 8rem; }
+  bottom: 5rem; }
 
 /* REDES SOCIALES */
 .social {
@@ -103,10 +114,14 @@ h5 {
   justify-content: space-evenly;
   align-items: center;
   background-color: #6cbb69;
-  height: 4rem; }
+  height: 3rem;
+  transition: 5s ease; }
   .social div a {
     text-decoration: none;
     color: white; }
+
+.social div a:hover {
+  color: #2c02e5; }
 
 /* AVENTURAS: Qué te ofrecemos */
 .aventuras {
@@ -379,6 +394,59 @@ footer p {
     color: white;
     text-align: center; }
 
+.galeria-fotos-comunidad {
+  width: 100vw;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  position: absolute; }
+  .galeria-fotos-comunidad div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36); }
+  .galeria-fotos-comunidad div p {
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 90%;
+    transition: ease-in-out 3s; }
+
+.imagen-1-comunidad {
+  object-fit: cover;
+  grid-row-end: span 2;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36); }
+  .imagen-1-comunidad p {
+    position: absolute;
+    bottom: 0; }
+
+.galeria--BotonVerMas a {
+  margin: 4rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+  color: white;
+  background-color: #56d5fc;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+  margin: 1rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0.36); }
+
+.galeria-fotos-comunidad img:hover {
+  -webkit-box-shadow: none;
+  box-shadow: 14px 12px 16px 2px #000000; }
+
+.galeria-fotos-comunidad p:hover {
+  display: block; }
+
 /* 5 --- CONTACTO */
 .pagina-Contacto {
   width: 100%;
@@ -442,7 +510,9 @@ footer p {
   .carousel-indicators {
     display: none; }
   .carousel-control-prev {
-    display: none; } }
+    display: none; }
+  .galeria-fotos-comunidad {
+    grid-template-columns: 1fr; } }
 
 /* Galaxy S8+ */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -451,7 +521,10 @@ footer p {
   .carousel-caption {
     bottom: 0px; }
   .carousel-indicators {
-    bottom: 0px; } }
+    bottom: 0px; }
+  .galeria-fotos-comunidad {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50vw; } }
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -460,7 +533,10 @@ footer p {
   .card {
     width: 18rem; }
   .carousel-indicators {
-    bottom: 0rem; } }
+    bottom: 0rem; }
+  .galeria-fotos-comunidad {
+    grid-template-columns: repeat(3fr);
+    grid-auto-rows: 33vw; } }
 
 /* Desktop */
 @media (min-width: 1200px) {
@@ -471,4 +547,6 @@ footer p {
   .carousel-caption {
     bottom: 5rem;
     left: 15%;
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .galeria-fotos-comunidad {
+    grid-template-columns: repeat(5fr); } }
