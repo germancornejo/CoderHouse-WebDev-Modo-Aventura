@@ -33,18 +33,20 @@
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: black;
+    align-items: center;
+    background-color: $color-verde-aventura-hover;
+    height: 4rem;
 
     div {
 
 
     a {
         text-decoration: none;
-       i {color:white;
+        color:white;
        }
     }
 }
-}
+
 
 
 /* AVENTURAS: Qué te ofrecemos */
