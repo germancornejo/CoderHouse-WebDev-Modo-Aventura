@@ -84,7 +84,8 @@ h5 {
 .marca {
   font-family: 'Permanent Marker', cursive;
   font-size: 20px;
-  color: #2c02e5; }
+  color: #2c02e5;
+  background: linear-gradient(135deg, rgba(16, 85, 147, 0.647496) 0%, #6cb2e3 100%); }
 
 /* mixins */
 /* 1 --- HOME PAGE */
