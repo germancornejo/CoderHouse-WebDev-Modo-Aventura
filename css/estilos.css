@@ -102,10 +102,10 @@ h5 {
   margin-bottom: 5rem; }
 
 .carousel-caption {
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .carousel-indicators {
-  bottom: 5rem; }
+  bottom: 2rem; }
 
 /* REDES SOCIALES */
 .social {
@@ -395,7 +395,7 @@ footer p {
     text-align: center; }
 
 .galeria-fotos-comunidad {
-  width: 100vw;
+  width: 98vw;
   margin: 30px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
